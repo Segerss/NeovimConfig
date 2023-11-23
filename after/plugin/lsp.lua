@@ -15,6 +15,7 @@ require('mason-lspconfig').setup({
   ensure_installed = {
 	'clangd',
 	'lua_ls',
+	'pylsp',
   },
   handlers = {
     lsp.default_setup,
@@ -26,4 +27,5 @@ require('mason-lspconfig').setup({
 ---
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').clangd.setup({})
+require('lspconfig').pylsp.setup({})
 -- require('lspconfig').rust_analyzer.setup({})
