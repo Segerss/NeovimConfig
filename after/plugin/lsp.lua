@@ -1,5 +1,3 @@
-print("hello from lsp")
-
 local lsp = require('lsp-zero')
 
 lsp.on_attach(function(client, bufnr)
