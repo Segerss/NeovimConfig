@@ -90,5 +90,18 @@ return require('packer').startup(function(use)
             }
         end
     }
+    -- use {
+    --     "ggandor/leap.nvim",
+    --     requires = {
+    --         { "tpope/vim-repeat" },
+    --     }
+    -- }
+
+    use {
+        "easymotion/vim-easymotion",
+        requires = {
+            { "tpope/vim-repeat" },
+        }
+    }
 end
 )
