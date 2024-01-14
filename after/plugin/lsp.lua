@@ -15,6 +15,7 @@ require('mason-lspconfig').setup({
         'lua_ls',
         'pylsp',
         'jsonls',
+        'bashls',
     },
     handlers = {
         lsp.default_setup,
@@ -44,11 +45,11 @@ require('lspconfig').lua_ls.setup({
 -- on_attach(client, bufnr);
 -- end;
 -- })
-require('lspconfig').clangd.setup({
 
-})
+require('lspconfig').clangd.setup({})
 require('lspconfig').pylsp.setup({})
 require('lspconfig').jsonls.setup({})
+require('lspconfig').bashls.setup({})
 
 -- Fix Undefined global 'vim'
 -- lsp.nvim_workspace()
