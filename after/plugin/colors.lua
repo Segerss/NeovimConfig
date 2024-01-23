@@ -1,4 +1,4 @@
-function rosepine()
+local function rosepine()
     color = color or "rose-pine"
     vim.cmd.colorscheme(color)
 
@@ -7,7 +7,7 @@ function rosepine()
     -- vim.api.nvim_set_hl(0,"NormalFloat", { bg = "none" })
 end
 
-function catpuccin()
+local function catpuccin()
     require("catppuccin").setup({
         flavour = "mocha", -- latte, frappe, macchiato, mocha
         background = {     -- :h background
@@ -59,5 +59,12 @@ function catpuccin()
     vim.cmd.colorscheme "catppuccin"
 end
 
+function reddish()
+    require('reddish')._load()
+    -- color = color or "reddish"
+    -- vim.cmd.colorscheme(color)
+end
+
 -- rosepine()
-catpuccin()
+-- catpuccin()
+reddish()
