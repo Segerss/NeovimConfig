@@ -65,7 +65,7 @@ return require('packer').startup(function(use)
     }
 
     use { "catppuccin/nvim", as = "catppuccin" }
-    use { "paulfrische/reddish.nvim", as = "reddish" }
+    use { "Segerss/reddish.nvim", as = "reddish" }
 
     use {
         "windwp/nvim-autopairs",
