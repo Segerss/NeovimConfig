@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     })
 
+    -- themes
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
@@ -21,18 +22,19 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme rose-pine')
         end
     })
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "Segerss/reddish.nvim", as = "reddish" }
+    --
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
+
     use('ThePrimeagen/harpoon')
+
     use('mbbill/undotree')
+
     use('tpope/vim-fugitive')
 
-    -- use {
-    -- "williamboman/mason.nvim",
-    -- "williamboman/mason-lspconfig.nvim",
-    -- "neovim/nvim-lspconfig",
-    -- }
 
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -63,9 +65,6 @@ return require('packer').startup(function(use)
     use {
         "akinsho/toggleterm.nvim",
     }
-
-    use { "catppuccin/nvim", as = "catppuccin" }
-    use { "Segerss/reddish.nvim", as = "reddish" }
 
     use {
         "windwp/nvim-autopairs",
