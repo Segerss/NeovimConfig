@@ -103,5 +103,6 @@ return require('packer').startup(function(use)
             { "tpope/vim-repeat" },
         }
     }
+    use { "xiyaowong/transparent.nvim", as = "transparent" }
 end
 )
