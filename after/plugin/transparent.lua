@@ -6,6 +6,6 @@ require("transparent").setup({ -- Optional, you don't have to run setup.
         'SignColumn', 'CursorLine', 'CursorLineNr', 'StatusLine', 'StatusLineNC',
         'EndOfBuffer',
     },
-    extra_groups = { 'LineNrAbove', 'LineNrBelow', 'Number', 'Boolean', 'Directory' }, -- table: additional groups that should be cleared
-    exclude_groups = {},                                                               -- table: groups you don't want to clear
+    extra_groups = { 'LineNrAbove', 'LineNrBelow', 'Number', 'Boolean', 'Directory', 'Character' }, -- table: additional groups that should be cleared
+    exclude_groups = {},                                                                            -- table: groups you don't want to clear
 })
