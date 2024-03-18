@@ -54,100 +54,95 @@ local function catpuccin()
         },
         color_overrides = {
             mocha = {
-                -- text = c.normal,
-                -- subtext1 = c.normal,
-                -- subtext0 = c.normal,
-                -- overlay2 = c.normal,
-                -- overlay1 = c.normal,
-                -- overlay0 = c.normal,
-                -- surface2 = c.normal,
-                -- surface1 = c.normal,
-                -- surface0 = c.normal,
+                mantle = "#000000",
+                -- mantle = "#353b45",
+                base = "#000000",
+                -- base = "#282c34",
+                surface0 = "#000000", -- current document telescope search
+                -- surface0 = "#3e4451",
+                surface1 = c.dark1,   -- includes line numbers
+                -- surface1 = "#545862",
+                surface2 = "#ffffff",
+                -- surface2 = "#565c64",
+                text = c.bright3, -- is variable names
+                -- text = "#abb2bf",
+                rosewater = "#ffffff",
+                lavender = c.bright3,
+                red = "#e06c75",
+                peach = c.bright2, -- function calls and function definitions
+                -- peach = "#d19a66",
+                yellow = c.bright1,
+                -- yellow = "#e5c07b",
+                green = c.dark1,
+                -- green = "#98c379",
+                teal = "#000000",
+                -- teal = "#56b6c2",
+                blue = c.normal,
+                -- blue = "#61afef",
+                mauve = c.normal,
+                -- mauve = "#c678dd",
+                -- flamingo = "#be5046",
+                flamingo = "#ffffff",
+
+                -- now patching extra palettes
+                maroon = "#ffffff",
+                -- maroon = "#e06c75",
+                sky = c.normal, --
+                -- sky = "#d19a66",
+
+                -- extra colors not decided what to do
+                pink = "#ffffff",
+                -- pink = "#F5C2E7",
+                sapphire = "#ffffff",
+                -- sapphire = "#74C7EC",
+
+                subtext1 = "#ffffff",
+                -- subtext1 = "#BAC2DE",
+                subtext0 = "#ffffff",
+                -- subtext0 = "#A6ADC8",
+                overlay2 = c.dark1, -- symbols (){} ;
+                -- overlay2 = "#9399B2",
+                overlay1 = "#7F849C",
+                -- overlay1 = "#7F849C",
+                overlay0 = "#6C7086",
+                -- overlay0 = "#6C7086",
+
+                crust = "#000000",
+                -- crust = "#11111B",
+                -- mantle = "#f6c2a5",
+                -- base = "#f6c2a5",
+                -- surface0 = "#f6c2a5",
+                -- surface1 = "#f6c2a5",
+                -- surface2 = "#f6c2a5",
+                -- text = "#f6c2a5",
+                -- rosewater = "#f6c2a5",
+                -- lavender = "#f6c2a5",
+                -- red = "#f6c2a5",
+                -- peach = "#f6c2a5",
+                -- yellow = "#f6c2a5",
+                -- green = "#f6c2a5",
+                -- teal = "#f6c2a5",
+                -- blue = "#f6c2a5",
+                -- mauve = "#f6c2a5",
+                -- flamingo = "#f6c2a5",
                 --
-                -- base = c.normal,
-                -- mantle = c.normal,
-                -- crust = c.normal,
-                -- text = "#F4CDE9",
-                -- subtext1 = "#DEBAD4",
-                -- subtext0 = "#C8A6BE",
-                -- overlay2 = "#B293A8",
-                -- overlay1 = "#9C7F92",
-                -- overlay0 = "#866C7D",
-                -- surface2 = "#705867",
-                -- surface1 = "#5A4551",
-                -- surface0 = "#44313B",
+                -- -- now patching extra palettes
+                -- maroon = "#f6c2a5",
+                -- sky = "#f6c2a5",
                 --
-                -- base = "#352939",
-                -- mantle = "#211924",
-                -- crust = "#1a1016",
+                -- -- extra colors not decided what to do
+                -- pink = "#f6c2a5",
+                -- sapphire = "#f6c2a5",
+                --
+                -- subtext1 = "#f6c2a5",
+                -- subtext0 = "#f6c2a5",
+                -- overlay2 = "#f6c2a5",
+                -- overlay1 = "#f6c2a5",
+                -- overlay0 = "#f6c2a5",
+                --
+                -- crust = "#f6c2a5",
             },
         },
-        custom_highlights = function(colors)
-            return {
-                -- Normal       = { fg = c.bright3, bg = c.background },
-                -- NormalFloat  = { fg = c.bright3, bg = c.background },
-                -- EndOfBuffer  = { fg = c.background, bg = c.background },
-                -- LineNr       = { fg = c.bright1, bg = c.background },
-                -- LineNrAbove  = { fg = c.bright1, bg = c.background },
-                -- LineNrBelow  = { fg = c.bright1, bg = c.background },
-                -- SignColumn   = { fg = c.bright1, bg = c.background },
-                -- Cursor       = { fg = c.bright1, bg = c.bright3 },
-                -- lCursor      = { fg = c.bright1, bg = c.bright3 },
-                -- DiffAdd      = { fg = c.bright1, bg = c.background },
-                -- DiffChange   = { fg = c.bright1, bg = c.background },
-                -- DiffDelete   = { fg = c.bright1, bg = c.background },
-                -- DiffText     = { fg = c.bright1, bg = c.background },
-                -- ErrorMsg     = { fg = c.normal, bg = c.background },
-                -- IncSearch    = { fg = c.dark2, bg = c.bright3 },
-                -- Search       = { fg = c.dark2, bg = c.bright3 },
-                -- Substitute   = { fg = c.dark2, bg = c.bright3 },
-                -- Pmenu        = { fg = c.bright3, bg = c.dark3 },
-                -- PmenuSel     = { fg = c.dark4, bg = c.bright3 },
-                -- Whitespace   = { fg = c.bright2, bg = c.background }, -- no clue
-                --
-                -- Comment      = { fg = c.bright2, bg = c.background }, -- color of comment including // (comment sign)
-                -- String       = { fg = c.bright1, bg = c.background }, -- string inside "" including "
-                -- Character    = { fg = c.bright1, bg = c.background }, -- character inside '' including '
-                -- Number       = { fg = c.bright3, bg = c.background },
-                -- Float        = { fg = c.bright3, bg = c.background },
-                -- Boolean      = { fg = c.normal, bg = c.background },  -- just the color of "true" and "false"
-                --
-                -- Statement    = { fg = c.normal, bg = c.background },  -- keywords like for if static while return
-                -- Identifier   = { fg = c.bright3, bg = c.background }, -- variable names color
-                -- Function     = { fg = c.bright2, bg = c.background }, -- part of the function calls like cppobject.functioncall()
-                --
-                -- StorageClass = { fg = c.test, bg = c.background },    -- color of variable types int, float, static, void
-                -- Type         = { fg = c.bright1, bg = c.background }, -- color of variable types int, float, static, void
-                -- Structure    = { fg = c.bright1, bg = c.background }, -- color of variable types int, float, static, void
-                -- Typedef      = { fg = c.bright1, bg = c.background }, -- color of variable types int, float, static, void
-                --
-                -- Visual       = { fg = c.background, bg = c.bright3 }, -- color of selected area in visual mode
-                --
-                -- Operator     = { fg = c.bright2, bg = c.background }, -- standard operator like *=. <<&
-                --
-                -- PreProc      = { fg = c.normal, bg = c.background },  -- only for some parts of the netrw file explorer in my project
-                --
-                -- Special      = { fg = c.normal, bg = c.background },  -- bright2 this includes the (){} ; and unknown functions
-                --
-                -- Directory    = { fg = c.bright1, bg = c.background }, -- color of directory in Netrw
-                --
-                -- MatchParen   = { fg = c.bright3, bg = c.normal },     -- color of the matching pair of the character which you are currently hovering with your cursor
-                --
-                -- Underlined   = { fg = c.bright1, bg = c.background },
-                --
-                -- Ignore       = { fg = c.dark1, bg = c.background }, -- dark1
-                --
-                -- Error        = { fg = c.normal, bg = c.background },
-                --
-                -- Todo         = { fg = c.bright3, bg = c.background },
-
-                -- lsp.type.namespace ={ fg = c.bright1, bg = c.background }, -- color of variable types int, float, static, void
-                -- Comment      = { fg = colors.flamingo },
-                -- TabLineSel   = { bg = colors.pink },
-                -- CmpBorder    = { fg = colors.surface2 },
-                -- Pmenu        = { bg = colors.none },
-            }
-        end,
         -- integrations = {
         -- cmp = true,
         -- gitsigns = true,
@@ -173,5 +168,5 @@ function reddish()
 end
 
 -- rosepine()
--- catpuccin()
-reddish()
+catpuccin()
+-- reddish()
