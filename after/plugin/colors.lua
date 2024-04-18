@@ -60,7 +60,7 @@ local function catpuccin()
                 -- base = "#282c34",
                 surface0 = "#000000", -- current document telescope search
                 -- surface0 = "#3e4451",
-                surface1 = c.dark1,   -- includes line numbers
+                surface1 = c.dark3,   -- includes line numbers
                 -- surface1 = "#545862",
                 surface2 = "#ffffff",
                 -- surface2 = "#565c64",
@@ -75,9 +75,9 @@ local function catpuccin()
                 -- yellow = "#e5c07b",
                 green = c.dark1,
                 -- green = "#98c379",
-                teal = "#000000",
+                teal = c.bright3, -- color of characters 'char'
                 -- teal = "#56b6c2",
-                blue = c.normal,
+                blue = c.bright1, -- function definition in python
                 -- blue = "#61afef",
                 mauve = c.normal,
                 -- mauve = "#c678dd",

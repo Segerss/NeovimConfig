@@ -90,6 +90,7 @@ return require('packer').startup(function(use)
             }
         end
     }
+
     -- use {
     --     "ggandor/leap.nvim",
     --     requires = {
@@ -104,5 +105,9 @@ return require('packer').startup(function(use)
         }
     }
     use { "xiyaowong/transparent.nvim", as = "transparent" }
+
+    -- for using plantUML
+    use("javiorfo/nvim-soil")
+    use("javiorfo/nvim-nyctophilia")
 end
 )

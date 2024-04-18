@@ -33,3 +33,6 @@ vim.keymap.set("n", "<leader>tv", "<C-W>v")
 
 -- vim.keymap.set("i", "<C-H>", "<C-W>", { noremap = true })
 vim.keymap.set("i", "<C-j>", "<C-W>")
+
+-- plantuml
+vim.keymap.set("n", "<leader><leader>soil", ":Soil<cr>")
