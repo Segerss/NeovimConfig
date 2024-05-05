@@ -36,3 +36,6 @@ vim.keymap.set("i", "<C-j>", "<C-W>")
 
 -- plantuml
 vim.keymap.set("n", "<leader><leader>soil", ":Soil<cr>")
+
+-- PythonKeymap
+vim.keymap.set("n", "<leader><leader>run", ":terminal python main.py<cr>")
