@@ -109,5 +109,14 @@ return require('packer').startup(function(use)
     -- for using plantUML
     use("javiorfo/nvim-soil")
     use("javiorfo/nvim-nyctophilia")
+
+    use("mfussenegger/nvim-dap")
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } }
+
+    use {
+        "williamboman/mason.nvim",
+        "jay-babu/mason-nvim-dap.nvim",
+    }
+    use("lervag/vimtex")
 end
 )

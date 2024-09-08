@@ -39,3 +39,7 @@ vim.keymap.set("n", "<leader><leader>soil", ":Soil<cr>")
 
 -- PythonKeymap
 vim.keymap.set("n", "<leader><leader>run", ":terminal python main.py<cr>")
+
+-- Debugger remaps
+vim.keymap.set('n', '<Leader>dc', function() require('dap').continue() end)
+vim.keymap.set('n', '<Leader>dt', function() require('dap').toggle_breakpoint() end)
